@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Teleoperation Of A Robotic Arm
+description: Basic Robotics Project
 img: assets/img/12.jpg
 importance: 1
 category: work
