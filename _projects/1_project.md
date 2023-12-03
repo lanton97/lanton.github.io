@@ -5,10 +5,11 @@ description: Basic Robotics Project
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-This year-long capstone project involved the development of a control system for the teleoperation of a robotic arm. 
+This year-long capstone project involved the development of a control system for the teleoperation of a robotic arm. The team consisted of 2 electrical engineers, focussed primarily on the development of the sensor systems for the user and robot, and 2 software engineers working on the control system and data processing.
+
+ 
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
