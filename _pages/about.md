@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a recent graduate with an MSc in computer science with a focus on artificial intelligence. I am passionate about a variety of topics, including robotics, deep learning, reinforcement learning, and all manners of autonomous systems.
 
+My industry experience has focused on software development for satellite communications systems for airplanes. This experience has allowed me to develop my skills with modern software practices, such as the agile methodology and various testing paradigms.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am currently looking for new opportunities to contribute and improve my skill set in the spaces of machine learning and robotics.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
