@@ -1,0 +1,80 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Luke Antonyshyn
+    - name: Date of Birth
+      value: June 27th 1997
+    - name: Languages
+      value: English, Ukrainian, Spanish
+
+- title: Education
+  type: time_table
+  contents:
+    - title: M.Sc. in Computer Science with a Field of Study in Artificial Intelligence
+      institution: Queen's University, Kingston, Ontario, Canada
+      year: 2022
+      description:
+        - Research on deep reinforcement learning for mobile robot control.
+        - Partook in courses on autonomous vehicles, deep learning, reinforcement learning, and data science.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: BASc in Computer Engieering with a Professional Internship
+      institution: Queen's University, Kingston, Ontario, Canada
+      year: 2020
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: Queen's University, Kingston, Ontario, Canada
+      year: 2020-2022
+      description:
+        - Assisted in teaching responsibilities in classes on image processing and computer vision, and reinforcement learning.
+        - Responsibilities included grading tests, exams, and assignments, holding tutorials, responding to students queries about course material, and developing new assignments.
+
+    - title: Embedded Systems Engineer Intern
+      institution: Honeywell Aerospace, Kanata, Ontario, Canada
+      year: May 2018-August 2019
+      description:
+        - Developed, maintained and documented system applications for handling central system control, built-in tests, system configuration, and physical environment monitoring and control for a satellite communications system for airplanes.
+        - Developed and maintained internal tools for sanity testing and customization of external configuration devices for the system.
+
+    - title: Research Assistant
+      institution: Sunnybrook Health Sciences Center, Toronto, Ontario, Canada
+      year: July-August 2016
+      description: 
+        - Provided assistance with development of a teaching recourse for Dr. Paul Binhammer, M.D.
+        - Classified, digitized, and standardized the format of a large number of cases, including common treatments and outcomes.
+  
+
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Machine Learning and Artificial Intelligence.
+      items: 
+        - Deep Learning.
+        - Reinforcement Learning.
+        - Multi-Agent Learning.
+    - title: Robotics.
+      items:
+        - Mobile Robots.
+        - Autonomous Robotic Systems.
+    - title: Control Theory.
+      items:
+        - Adaptive Control.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Rock Climbing, Surfing, Hiking, Mountain Climbing, Skiing, Camping, Cycling, Literature, White Water Kayaking, Travel
