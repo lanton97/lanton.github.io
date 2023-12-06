@@ -2,12 +2,14 @@
 layout: page
 title: Robotic Arm w/ Teleoperation and Haptic Feedback
 description: 
-img: assets/img/12.jpg
+img: assets/img/robotic_arm/LabVolt-M80.jpeg
 importance: 4
 category: work
 ---
 
 This year-long electrical and computer engineering capstone project involved the development of a system for the teleoperation of a robotic arm with haptic feedback. The project team consisted of two electrical engineers, tasked with the development and calibration of the sensor systems for the user and the robotic arm, and two computer engineers, tasked with the development of the control system for the robotic arm, the sensor data analysis and the communications between the sensor computer and the robot control computer.
+
+The code was written primarily in C++, which was used to implement the network programming, sensor data reading and fusion, control input calculation, and control input sending through the Labvolt SDK.
 
 Below is a list of the components and tasks that I personally completed:
     - High level system design
@@ -19,75 +21,92 @@ Below is a list of the components and tasks that I personally completed:
     - Component testing (ranges of values from IMU, flex sensors, touch sensors)
     - Implementation of haptic responses through haptic motors
     - Implementation of transforming sensor data into control inputs
+    - Implementation of using the robotic arm SDK to utilize the control inputs
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The parts list for the sensor array can be seen below:
+<table>
+<thead>
+  <tr>
+    <th>Component</th>
+    <th>Quantity<br></th>
+    <th>Description/Use<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Arduino Mega</td>
+    <td>1</td>
+    <td>Interface for control glove sensors and haptic devices</td>
+  </tr>
+  <tr>
+    <td>Flex Sensors</td>
+    <td>2</td>
+    <td>Measure bend at fingers, wrist, elbow</td>
+  </tr>
+  <tr>
+    <td>IMU (Inertial Momentum Unit)</td>
+    <td>1</td>
+    <td>Measure rotation of arm, movement of arm in x-y plane</td>
+  </tr>
+  <tr>
+    <td>Vibro-motors</td>
+    <td>4</td>
+    <td>Provide tactile feedback to user based on amount of pressure applied</td>
+  </tr>
+  <tr>
+    <td>Linear Actuator</td>
+    <td>1</td>
+    <td>Provide physical pull-back to indicate maximum pressure threshold on object</td>
+  </tr>
+  <tr>
+    <td>Arduino Uno</td>
+    <td>1</td>
+    <td>Interface for reading pressure data from sensors attached to LabVolt 5150</td>
+  </tr>
+  <tr>
+    <td>Pressure sensors</td>
+    <td>4</td>
+    <td>Sense object interaction on Labvolt robot</td>
+  </tr>
+  <tr>
+    <td>Arm-Length Glove</td>
+    <td>1</td>
+    <td>Mount sensors and haptic feedback components</td>
+  </tr>
+  <tr>
+    <td>Nylon Cabling</td>
+    <td>2</td>
+    <td>Attached to linear actuator to apply pressure to user’s fingertips</td>
+  </tr>
+  <tr>
+    <td>3D printed glove components</td>
+    <td>1</td>
+    <td>Bind fingers together, provide anchor points for cabling and vibro-motors</td>
+  </tr>
+</tbody>
+</table>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Below, some images of the assembled sensor array for the robot can be seen.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="User Sensor Glove" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/robotic_arm/WiringSetup.jpg" title="Wiring w/ Arduino" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/robotic_arm/SensorArray.jpg" title="User Sensor Array" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Images of the wiring of the sensor array. On the left, we can see the Arduino with the wiring on a breadboard that attaches to various sensors. On the right, we can see the sensor array attached to the user control glove.
 </div>
-<div class="row">
+
+Below, a video of the demonstration of the project is available, showcasing the functionality of the robotic arm teleoperation system.
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="assets/video/490_demo.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+Unfortunately, several axes of rotation for the robot, as well as some planned haptic responses were left uncompleted due to the onset of COVID-19 and the subsequent graduations of the team members.
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
