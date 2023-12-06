@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - lanton97
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - lanton97/motion-planning
+  - lanton97/MADDPG-Formation-Control
