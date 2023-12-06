@@ -37,27 +37,18 @@
 
     - title: Embedded Systems Engineer Intern
       institution: Honeywell Aerospace, Kanata, Ontario, Canada
-      year: May 2018-August 2019
+      year: 2018-2019
       description:
         - Developed, maintained and documented system applications for handling central system control, built-in tests, system configuration, and physical environment monitoring and control for a satellite communications system for airplanes.
         - Developed and maintained internal tools for sanity testing and customization of external configuration devices for the system.
 
     - title: Research Assistant
       institution: Sunnybrook Health Sciences Center, Toronto, Ontario, Canada
-      year: July-August 2016
+      year: Summer 2016
       description: 
         - Provided assistance with development of a teaching recourse for Dr. Paul Binhammer, M.D.
         - Classified, digitized, and standardized the format of a large number of cases, including common treatments and outcomes.
   
-
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
 - title: Academic Interests
   type: nested_list
   contents:
