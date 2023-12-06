@@ -7,7 +7,7 @@ category: work
 giscus_comments: true
 ---
 
-In this project, we implemented an MADDPG algorithm to teach particle robot agents to coordinate without communication in order to create a formation and avoid collisions between each other and obstacles. Several variations of the environment and several learning agents were implemented, tested and compared. This project was undertaken with one other co-contributor. The project was implemented using Python. We used Tensorflow for the deep learning, numpy for mathematics, and matplotlib to generate plots, images, and animations.
+In this project, we implemented an MADDPG algorithm to teach particle robot agents to coordinate without communication in order to create a formation and avoid collisions between each other and obstacles. Several variations of the environment and several learning agents were implemented, tested and compared. This project was undertaken with one other co-contributor. The project was implemented using Python. We used Tensorflow for the deep learning, numpy for mathematics, and matplotlib to generate plots, images, and animations. OpenAI Gym was used for the environment.
 
 We implemented the MADDPG agent based on the original paper, available <a href="https://arxiv.org/pdf/1706.02275.pdf">here</a>, and a modified version of a tutorial version of <a href="https://keras.io/examples/rl/ddpg_pendulum/">DDPG</a>. We also implement an independent learning version of DDPG, where each agent learns as if in a static environment, and a version where a single DDPG agent controls all of the robots. We note that the positions of the particles, the goal and the obstacles are randomized for each trial during training and execution to encourage generalization.
 

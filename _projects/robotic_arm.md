@@ -3,7 +3,7 @@ layout: page
 title: Robotic Arm w/ Teleoperation and Haptic Feedback
 description: 
 img: assets/img/12.jpg
-importance: 1
+importance: 4
 category: work
 ---
 
