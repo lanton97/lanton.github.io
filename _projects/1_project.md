@@ -1,12 +1,24 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Robotic Arm w/ Teleoperation and Haptic Feedback
+description: 
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: 
 ---
+
+This year-long electrical and computer engineering capstone project involved the development of a system for the teleoperation of a robotic arm with haptic feedback. The project team consisted of two electrical engineers, tasked with the development and calibration of the sensor systems for the user and the robotic arm, and two computer engineers, tasked with the development of the control system for the robotic arm, the sensor data analysis and the communications between the sensor computer and the robot control computer.
+
+Below is a list of the components and tasks that I personally completed:
+    - High level system design
+    - Initial project ideation
+    - Selection and ordering of flex sensors, IMU, haptic motors
+    - Selection of sensor glove components
+    - Implementation of serial reading from Arduino
+    - Implementation of wireless communication through sockets
+    - Component testing (ranges of values from IMU, flex sensors, touch sensors)
+    - Implementation of haptic responses through haptic motors
+    - Implementation of transforming sensor data into control inputs
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -23,7 +35,7 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/1.jpg" title="User Sensor Glove" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

@@ -1,12 +1,15 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: MADDPG-Based Collision Avoidance
+description: A project that uses MADDPG to avoid collisions with obstacles for particle robots
 img: assets/img/3.jpg
+redirect: https://github.com/lanton97/MADDPG-Formation-Control
 importance: 2
 category: work
 giscus_comments: true
 ---
+
+In this project, we implemented an MADDPG algorithm to teach particle robot agents to coordinate without communication in order to create a formation and avoid collisions between each other and obstacles. Several variations of the environment and several learning agents were implemented, tested and compared. This project was undertaken with one other co-contributor.
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
