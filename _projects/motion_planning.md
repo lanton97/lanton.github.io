@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sampling-Based Motion Planning Implementations
+title: Sampling-Based Motion Planning
 img: assets/img/7.jpg
 importance: 2
 category: work
