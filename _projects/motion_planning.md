@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sampling-Based Motion Planning
-img: assets/img/7.jpg
+img: assets/img/mp/rrt.png
 importance: 2
 category: work
 ---
@@ -18,34 +18,28 @@ I implemented several variations of the RRT algorithm. I began with RRT\*, an al
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include gif.html path="assets/img/mp/rrt_run.gif" title="" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include gif.html path="assets/img/mp/rrt*_run.gif" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    An animation of RRT on the left, and RRT* on the right.
 </div>
 
 Following this, I implemented the bidirectional RRT and RRT\* algorithms. These algorithms work similarly to RRT and RRT\*, but grow one tree from the start position and one from the end position, until the two trees are close enough to connect. This generally reduces the amount of time needed to find a path from the start to the end.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include gif.html path="assets/img/mp/bd_rrt_run.gif" title="" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include gif.html path="assets/img/mp/bd_rrt*_run.gif" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    An animation of bidirectional RRT on the left, and bidirectional RRT* on the right.
 </div>
 
 For the next steps, I am planning on implementing and testing collision detection and a maze environment to check the functioning of the RRT algorithms. I will then add new vehicle kinematics with a Dubin's car, before implementing further algorithms such as PRM and FMT. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
