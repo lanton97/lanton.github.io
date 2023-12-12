@@ -42,4 +42,18 @@ Following this, I implemented the bidirectional RRT and RRT\* algorithms. These 
     An animation of bidirectional RRT on the left, and bidirectional RRT* on the right.
 </div>
 
-For the next steps, I am planning on implementing and testing collision detection and a maze environment to check the functioning of the RRT algorithms. I will then add new vehicle kinematics with a Dubin's car, before implementing further algorithms such as PRM and FMT. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
+I then added Dubin's curve planning and kinematics with the exisiting algorithms. I tested these on the empty environment to ensure they worked correctly. The code for the dubins kinematics themselves is a modified version of some code pulled from Github, with various modifications to make the code function with my system. Images of some of the planning can be seen below, where we can note the various curves found.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/rrt_dubins_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/bdrrt_dubins_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An animation of RRT with Dubin's paths on the left, and bidirectional RRT with Dubin's paths on the right.
+</div>
+
+For the next steps, I am planning on implementing and testing collision detection and a maze environment to check the functioning of the RRT algorithms, before implementing further algorithms such as PRM and FMT. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
