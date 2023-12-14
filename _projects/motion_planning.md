@@ -56,4 +56,18 @@ I then added Dubin's curve planning and kinematics with the exisiting algorithms
     An animation of RRT with Dubin's paths on the left, and bidirectional RRT with Dubin's paths on the right.
 </div>
 
-For the next steps, I am planning on implementing and testing collision detection and a maze environment to check the functioning of the RRT algorithms, before implementing further algorithms such as PRM and FMT. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
+I implemented a generalizable maze environment to test the motion planners, along with the necessary collision checkers. I implemented an xml parser to read the maze configurations, allowing users to edit the maze details through a human readable format.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/bdrrt_maze_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/bdrrt_maze_dubins_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An animation of bidirectional RRT on a maze on the left, and the same with Dubin's paths on the right.
+</div>
+
+For the next steps, I am planning on implementing more environments and implementing further algorithms such as PRM and FMT. I also plan on updating the documentation for the project. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
