@@ -70,4 +70,18 @@ I implemented a generalizable maze environment to test the motion planners, alon
     An animation of bidirectional RRT on a maze on the left, and the same with Dubin's paths on the right.
 </div>
 
-For the next steps, I am planning on implementing more environments and implementing further algorithms such as PRM and FMT. I also plan on updating the documentation for the project. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
+I then implemented the FMT* algorithm. I used the original paper for the implementation, and had to make some minor changes to ensure the algorithm worked correctly. I also had to refactor some code to work for more general cases in order to support FMT. The results can be seen below. It is clear to see that the expansion of the tree proceeds significantly differently than the RRT algorithms. I also implemented a feature to highlight the final path in red, although I did not retroactively update the previous animations.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/fmt_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include gif.html path="assets/img/mp/fmt_maze_dubins_run.gif" title="" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An animation of FMT* with particle dynamics on the left, and FMT* with Dubin's paths on a maze on the right.
+</div>
+
+For the next steps, I am planning on implementing more environments and implementing further algorithms such as PRM. I am also planning on doing some experiments with integrating DRL into the motion planning process. The Github page for the project is available <a href="https://github.com/lanton97/motion-planning">here</a>.
