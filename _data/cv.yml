@@ -21,9 +21,16 @@
       institution: Queen's University, Kingston, Ontario, Canada
       year: 2020
 
-- title: Experience
+- title: Professional Experience
   type: time_table
   contents:
+    - title: Research Assistant
+      institution: Royal Military College, Kingston, Ontario, Canada
+      year: 2024-Present
+      description:
+        - Contract to develop neural network approach to sensor fusion and localization.
+        - Responsibilities include developing algorithms, running experiments, and writing a paper.
+
     - title: Teaching Assistant
       institution: Queen's University, Kingston, Ontario, Canada
       year: 2020-2022
