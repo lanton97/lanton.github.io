@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MADDPG-Based Collision Avoidance
-img: assets/img/marl/training_data.jpg
+img: assets/img/marl/maddpg.png
 importance: 1
 category: work
 giscus_comments: true
